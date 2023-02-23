@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Weather App</title>
+</head>
+
+<body>
+
+  <div class="weather-app">
+    <div>
+      <input id="city-input" type="text" placeholder="Moskow">
+      <button id="search-button">Search</button>
+    </div>
+    <div id="container">
+      <div id="left-side">
+        <div id="weater-data">
+          <p id="city"></p>
+          <p id="date"></p>
+          <div id="iconTemp">
+            <img id="weatherImg" src="" alt="">
+            <p id="temperature"></p>
+          </div>
+          <div class="feelType">
+            <p id="weatertype"></p>
+            <p id="feelsLike"></p>
+          </div>
+          <div id="detailsContainer">
+            <div>
+              Humidity:
+              <p id="humidity"></p>
+            </div>
+            <div>
+              Windspeed:
+              <p id="windspeed"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="right-side">
+        <canvas id="chart"></canvas>
+        <div id="tabs">
+          <button class="tab" id="tab-1"></button>
+          <button class="tab" id="tab-2"></button>
+          <button class="tab" id="tab-3"></button>
+          <button class="tab" id="tab-4"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./main.js" type="module"></script>
+  <script src="./utils.js" type="module"></script>
+</body>
+
+</html>

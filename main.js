@@ -43,8 +43,8 @@ function addListeners() {
       });
       tab.classList.add('active');
       updateChart(index);
-    })
-  })
+    });
+  });
 }
 
 // извлекaю данные из openweathermap по API

@@ -191,3 +191,33 @@ body {
   margin-top: 16px;
   margin-right: 2rem;
 }
+
+@media only screen and (max-width: 900px) {
+  #weather-app {
+    width: 100%;
+  }
+
+  #container {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  #left-side, #right-side {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+  }
+
+  #city-input {
+    width: 40%;
+  }
+
+  #city {
+    font-size: 32px;
+  }
+
+  #date {
+    font-size: 14px;
+  }
+
+}

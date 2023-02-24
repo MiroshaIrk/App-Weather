@@ -1,4 +1,4 @@
-## Приложение [Прогноза погоды](https://miroshairk.github.io/weather_app/).
+## Приложение [Прогноза погоды](https://miroshairk.github.io/App-Weather/).
 
 Простое погодное приложение, реализованное с использованием JS, HTML и CSS без какого-либо фреймворка Javascript.
 

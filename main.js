@@ -43,8 +43,8 @@ function addListeners() {
       });
       tab.classList.add('active');
       updateChart(index);
-    })
-  })
+    });
+  });
 }
 
 // извлекaю данные из openweathermap по API
@@ -62,7 +62,7 @@ async function fetchData(city) {
 
   const currentWeatherData = await currentWeatherResponse.json();
   const forecastData = await forecastResponse.json();
-  console.log(currentWeatherData, forecastData)
+
   return [currentWeatherData, forecastData];
 }
 
@@ -91,7 +91,6 @@ function drawChart() {
 }
 
 function updateText(city, currentWeatherData) {
-  console.log(city, currentWeatherData)
   cityDisplay.textContent = city;
   temperatureDisplay.textContent = `${currentWeatherData.main.temp}°C`;
   weatherTypeDisplay.textContent = `${currentWeatherData.weather[0].main}`;
@@ -131,7 +130,6 @@ async function getWeatherData(city) {
     let dateString = date.toLocaleDateString();
 
     if (i === 0 || dateString !== new Date(forecastData.list[i - 1].dt * 1000).toLocaleDateString()) {
-      console.log(item.main.temp)
       temperatureData.push([item.main.temp]);
       labels.push(date.toLocaleDateString('ru-RU', {
         weekday: 'short',

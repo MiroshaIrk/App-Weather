@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <title>Weather App</title>
 </head>
 
@@ -13,14 +14,14 @@
 
   <div class="weather-app">
     <div>
-      <input id="city-input" type="text" placeholder="Moskow">
-      <button id="search-button">Search</button>
+      <input id="city-input" type="text" placeholder="Irkutsk">
+      <button id="search-button">Поиск</button>
     </div>
     <div id="container">
       <div id="left-side">
         <div id="weater-data">
-          <p id="city"></p>
           <p id="date"></p>
+          <p id="city"></p>
           <div id="iconTemp">
             <img id="weatherImg" src="" alt="">
             <p id="temperature"></p>
@@ -31,11 +32,11 @@
           </div>
           <div id="detailsContainer">
             <div>
-              Humidity:
+              Влажность:
               <p id="humidity"></p>
             </div>
             <div>
-              Windspeed:
+              Скорость ветра:
               <p id="windspeed"></p>
             </div>
           </div>
@@ -54,9 +55,8 @@
     </div>
   </div>
 
-
-  <script src="./main.js" type="module"></script>
   <script src="./utils.js" type="module"></script>
+  <script src="./main.js" type="module"></script>
 </body>
 
 </html>
